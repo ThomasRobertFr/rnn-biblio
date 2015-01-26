@@ -1,0 +1,42 @@
+\documentclass[compress,xcolor=table]{beamer}
+
+\usepackage[french]{babel}
+\selectlanguage{french}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+
+\usetheme{stim}
+
+\title{\LARGE Réseaux de Neurones Récurrents\newline{\Large \em Recurrent Neural Networks (RNN)\newline~}}
+\foottitle{Réseaux de Neurones Récurrents}
+\subtitle{\large Projet de Traitement de l'Écrit}
+\date{\formatdate{20}{2}{2015}}
+\author{\texttt{G4E} \and Thomas \textsc{Robert}}
+\institute{Université de Rouen}
+
+% add notes
+%\setbeameroption{show notes}  
+
+\begin{document}
+
+
+\input{10_Introduction}
+
+\section{Architectures classiques de RNN}
+\input{20_RNNClassiques}
+
+\section{Nouvelles architectures de RNN}
+\input{30_LSTM}
+
+\section{Conclusion}
+\input{40_Conclusion}
+
+\section{Bibliographie}
+\begin{frame}[allowframebreaks]{Bibliographie}
+\bibliographystyle{abstract}
+\bibliography{biblio}
+ \end{frame}
+
+\end{document}
+
