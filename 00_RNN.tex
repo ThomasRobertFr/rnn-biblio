@@ -5,6 +5,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{datetime}
+\usepackage[backend=bibtex,style=draft,sorting=debug]{biblatex}
+\bibliography{biblio}
+\let\stdcite\cite
+\renewcommand{\cite}[1]{[\stdcite{#1}]}
 
 \usetheme{stim}
 
@@ -34,8 +38,9 @@
 
 \section{Bibliographie}
 \begin{frame}[allowframebreaks]{Bibliographie}
-\bibliographystyle{abstract}
-\bibliography{biblio}
+%\bibliographystyle{abstract}
+%\bibliography{biblio}
+\printbibliography
  \end{frame}
 
 \end{document}
