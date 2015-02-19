@@ -9,6 +9,7 @@
 \bibliography{biblio}
 \let\stdcite\cite
 \renewcommand{\cite}[1]{[\stdcite{#1}]}
+\renewcommand*{\bibfont}{\scriptsize}
 
 \usetheme{stim}
 
@@ -34,13 +35,15 @@
 \input{30_LSTM}
 
 \section{Conclusion}
+\subsection*{~~~~~~~~~~~~~~~}
 \input{40_Conclusion}
 
 \section{Bibliographie}
+\subsection*{~~~~~~~~~~~~~~~}
 \begin{frame}[allowframebreaks]{Bibliographie}
 %\bibliographystyle{abstract}
 %\bibliography{biblio}
-\printbibliography
+\printbibliography[heading=none]
  \end{frame}
 
 \end{document}

@@ -1,29 +1,18 @@
-\begin{frame}{Titre de la slide}
-	\begin{block}{Texte}
-	\begin{itemize}
-	\item Item 1
-	\end{itemize}
-	\end{block}
-	
-	\begin{alertblock}{Important}
-	\begin{itemize}
-	\item Item 1
-	\end{itemize}
-	\end{alertblock}
+\begin{frame}{Architecture générale}
+    \begin{figure}
+        \includegraphics[height=.75\textheight,width=\textwidth,keepaspectratio]{images/arch_rnn_1}
+        \caption{Réseau de neurones récurrent {\scriptsize\it -- Source : Cours R. \textsc{Hérault} \& P. \textsc{Leray}}}
+    \end{figure}
+
 \end{frame}
 
-\begin{frame}{Titre de la slide}	
-	\begin{exampleblock}{Example}
-	\begin{itemize}
-	\item Item 1
+\begin{frame}{Architecture d'un RNN d'Elman}
+    \begin{figure}
+        \includegraphics[height=.65\textheight,width=\textwidth,keepaspectratio]{images/Elman_srnn}
+        \caption{RNN d'Elman {\scriptsize\it -- Source : wikimedia.org}}
+    \end{figure}
+    \vspace{-.5cm}
+	\begin{itemize} 
+		\item La couche $u_1 ... u_n$ sert de mémoire pour l'état précédent 
 	\end{itemize}
-	\end{exampleblock}
-	
-	\setbeamercolor{block title}{bg=hsrmSec2Dark}
-	\setbeamercolor{block body}{bg=hsrmSec2}
-	\begin{block}{Autre}
-	\begin{itemize}
-	\item Item 1
-	\end{itemize}
-	\end{block}
 \end{frame}
