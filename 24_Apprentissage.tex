@@ -2,7 +2,7 @@
 	\begin{itemize}
 		\item Les deux méthodes les plus communes
 		\begin{itemize}
-			\item Real Time Reccurent Learning (RTRL) \cite{Robinson87}
+			\item Real Time Recurrent Learning (RTRL) \cite{Robinson87}
 			\item BackPropagation Through Time (BPTT) \cite{Williams89}
 		\end{itemize}
 	\end{itemize}
@@ -11,8 +11,8 @@
 \begin{frame}{RTRL}
 
 	\begin{itemize}
-		\item On calcul l'erreur de gradient et on met à jour les poids à chaque pas
-		\item  
+		\item On calcul le gradient de l'erreur par rapport aux poids et on met à jour les poids à chaque pas de temps en conséquence
+        \item Complexité $\mathcal{O}\left((n+l)^4\right)$ ($n$ entrées, $l$ sorties)
 	\end{itemize}
 \end{frame}
 
@@ -43,5 +43,6 @@
 		 \begin{itemize}
 		 	\item On limite aux k dernières itérations : on oublie des informations
 		 \end{itemize}
+             \item Complexité $\mathcal{O}(t\times n^2)$ ($n$ neurones, $t$ étapes temporelles)
 	\end{itemize}
 \end{frame}
